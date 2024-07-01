@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plant watering system</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="maindiv">
+        <header>
+        <img class="logo" src="photos/planet-earth.png" />
+        <nav>
+        <ul>
+        <li>
+        <a href="/home.html" class="active">Home</a>
+        </li>
+        <li>
+        <a href="/myplant.html">My plant</a>
+        </li>
+        <li>
+        <a href="/about.html">About</a>
+        </li>
+        </ul>
+        </nav>
+        </header>
+    </div>
+    <div class="weather-container">
+        <input type="text" id="city" placeholder="Enter city">
+        <button id="search" onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="Weather icon">
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+        <div id="hourly-forecast"></div>
+    </div>
+    <div class="grow-img">
+        <img src="photos/growth.png" alt="">
+    </div>
+<script defer  src="weather.js"></script>
+</body>
+</html>

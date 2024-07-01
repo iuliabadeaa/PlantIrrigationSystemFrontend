@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    list-style: none;
+    text-decoration: none;
+    }
+    header {
+    width: 100%;
+    height: 70px;
+    background: #773c76;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+    body {
+    background-color: #dfa8de;
+    height: 100vh;
+    display: flex;
+    align-items: column;
+    justify-content: right;
+    } 
+    #maindiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+    }
+    nav ul li{
+    display: inline;
+    align-items: end;
+    }
+    nav ul li a {
+    color: #1f1f1f;
+    height: 100%;
+    padding: 0 10px;
+    display: flex-end;
+    align-items: flex-end;
+    }
+    nav ul li a:hover {
+    color: rgb(241, 181, 241);
+    }
+    .plant_photo {
+        position: absolute;
+        top: 30%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+    }
+    .temperature-container {
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+    }
+    .text {
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+    }
+    .humidity-container {
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        top: 60%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+    .soil-moisture-container {
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+    .light-container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+    }
+    .circular-progress{
+        position: relative;
+        height: 100px;;
+        width: 100px;
+        background-color: rgb(123, 55, 148);
+        border-radius: 50%;
+        background: conic-gradient(#471947 3.6deg, #757575 0deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .circular-progress::before{
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: #dfa8de;
+    }
+
+    #water-pump{
+        position: absolute;
+        top: 85%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+        padding: 1%;
+        background: #d5e0e9;
+        border-radius: 15%;
+
+    }
+    #water-pump:hover{
+        background: rgb(79, 36, 121);
+    }
+
+    .weather-container{
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(253, 203, 247);
+        max-width: 800px;
+        padding-block-start: 3%;
+        padding-block-end: 5%;
+        border-radius: 15%;
+        box-shadow: 0 8px 32px rgb(89, 45, 89);
+        backdrop-filter: blur(10px);
+        text-align: center;
+    }
+    input{
+        width:auto;
+        padding: 8px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    #search{
+        background: #d5e0e9;
+        color: #090d10;
+        padding: 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100px;
+        font-size: 15px;
+    }
+    #search:hover{
+        background:rgb(79, 36, 121);
+    }
+    #temp-div{
+        font-size: 20px;
+        margin-top: -30px;
+    }
+    #weather-info{
+        font-size: 20px;
+    }
+    #weather-icon{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 10px;
+        display: none;
+    }
+    #light,#soil,#humidity,#temperature{
+        z-index: 1000!important;
+    }
+    #hourly-forecast{
+        margin-top: 50px;
+        overflow-x: auto;
+        white-space: nowrap;
+        display:flex;
+        justify-content: space-between;
+    }
+    .hourly-item{
+        flex: 0 0 auto;
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        color: rgb(78, 27, 73);
+    }
+    .hourly-item img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    #hourly-heading{
+        color:#fff;
+        margin-top: 10px;
+    }
+    .grow-img{
+        position: absolute;
+        top: 35%;
+        left: 70%;
+    }
+    .about{
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }

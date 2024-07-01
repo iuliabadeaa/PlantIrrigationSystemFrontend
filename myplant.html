@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plant watering system</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="maindiv">
+        <header>
+        <img class="logo" src="photos/planet-earth.png" />
+        <nav>
+        <ul>
+        <li>
+        <a href="/home.html" class="active">Home</a>
+        </li>
+        <li>
+        <a href="/myplant.html">My plant</a>
+        </li>
+        <li>
+        <a href="/about.html">About</a>
+        </li>
+        </ul>
+        </nav>
+        </header>
+    </div>
+ <div class="plant_photo">
+    <img src="photos/plant.png" alt="plant">
+</div>
+<span class="temperature-container">
+    <div class="circular-progress" id="temperature-back">
+        <span id="temperature">0°C </span>
+    </div>
+    <span class="text">Air temperature</span>
+</span>
+
+<span class="humidity-container">
+    <div class="circular-progress" id="humidity-back">
+        <span id="humidity">0%</span>
+    </div>
+    <span class="text">Air humidity</span>
+
+</span>
+
+<span class="soil-moisture-container">
+    <div class="circular-progress"  id="soil-back">
+        <span id="soil">0%</span>
+    </div>
+    <span class="text">Soil moisture</span>
+</span>
+
+<span class="light-container">
+    <div class="circular-progress" id="light-back">
+        <span id="light">0%</span>
+    </div>
+    <span class="text">Light level</span>
+</span>
+
+<button id="water-pump" >TURN ON</button>
+    
+<script defer type="module" src="script.js"></script>
+</body>
+</html>
